@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="730.0" style="-fx-background-color: #FDFEFE;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="view.MedecinController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28b463" height="38.0" layoutX="14.0" layoutY="131.0" stroke="#dacece1f" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28b463" height="38.0" layoutX="14.0" layoutY="213.0" stroke="#dacece" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28b463" height="38.0" layoutX="14.0" layoutY="294.0" stroke="#dacece" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28b463" height="38.0" layoutX="14.0" layoutY="382.0" stroke="#dacece" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28b463" height="38.0" layoutX="14.0" layoutY="465.0" stroke="#dacece" strokeType="INSIDE" width="200.0" />
+      <FontAwesomeIcon fill="#ddd4d4" glyphName="USER" layoutX="19.0" layoutY="408.0" size="1.8em" />
+      <FontAwesomeIcon glyphName="" layoutX="15.0" layoutY="224.0" text="" />
+      <DatePicker layoutX="478.0" layoutY="44.0" promptText="Rechercher par date" />
+      <TableView layoutX="375.0" layoutY="213.0" prefHeight="200.0" prefWidth="317.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+      <FontAwesomeIcon layoutX="21.0" layoutY="143.0" />
+      <FontAwesomeIcon layoutX="15.0" layoutY="318.0" />
+      <FontAwesomeIcon glyphName="DECONNEXION" layoutX="13.0" layoutY="477.0" />
+   </children>
+</AnchorPane>

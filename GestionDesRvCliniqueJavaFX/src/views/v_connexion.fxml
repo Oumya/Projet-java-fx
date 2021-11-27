@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ConnexionController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="364.0" layoutX="1.0" layoutY="-1.0">
+         <image>
+            <Image url="@logo.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#28b463" height="500.0" layoutX="365.0" layoutY="-1.0" stroke="#28b463" strokeType="INSIDE" width="385.0" />
+      <TextField fx:id="txtfLogin" layoutX="448.0" layoutY="137.0" prefHeight="44.0" prefWidth="220.0" promptText="Entrer votre login" />
+      <Button layoutX="571.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleConnexion" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #FDFEFE;" text="Connexion" textFill="#28b463">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Button>
+      <CheckBox layoutX="448.0" layoutY="288.0" mnemonicParsing="false" text="je ne suis pas un robot" textFill="#fcf9f9" />
+      <Button layoutX="448.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #229954;" text="Annuler" textFill="#e7ebe8">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text fill="#fffafa" layoutX="441.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue" wrappingWidth="259.171875">
+         <font>
+            <Font name="Footlight MT Light" size="58.0" />
+         </font>
+      </Text>
+      <Text fill="#eedfdf" layoutX="448.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient sans compte?" />
+      <Text fill="#205b2fc9" layoutX="571.0" layoutY="422.0" onMouseClicked="#handleInscription" strokeType="OUTSIDE" strokeWidth="0.0" text="veuiller créer un compte" />
+      <PasswordField fx:id="txtfPassword" layoutX="448.0" layoutY="227.0" prefHeight="44.0" prefWidth="220.0" promptText="Entrer votre mdp" />
+   </children>
+</AnchorPane>
